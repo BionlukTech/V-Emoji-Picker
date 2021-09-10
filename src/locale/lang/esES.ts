@@ -1,6 +1,6 @@
 export default {
   search: 'Buscar ...',
-  categories: {
+  eCategories: {
     Activity: "Actividades",
     Flags: "Banderas",
     Foods: "Comidas",

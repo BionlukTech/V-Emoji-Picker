@@ -90,7 +90,7 @@ export default class EmojiList extends Vue {
     const searchValue = this.filter.trim().toLowerCase();
 
     if (searchValue) {
-      this.categories.forEach((category: string) => {
+      this.eCategories.forEach((category: string) => {
         _data[category] = this.data[category].filter((item: Emoji) =>
           this.searchByAlias(searchValue, item)
         );
@@ -100,7 +100,7 @@ export default class EmojiList extends Vue {
     return _data;
   }
 
-  get categories(): any {
+  get eCategories(): any {
     return Object.keys(this.data);
   }
 

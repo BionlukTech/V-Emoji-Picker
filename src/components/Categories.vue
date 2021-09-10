@@ -1,7 +1,7 @@
 <template>
   <div id="Categories">
     <div
-      v-for="(category, index) in categories"
+      v-for="(category, index) in eCategories"
       :class="['category', { active: category.name === current }]"
       :key="index"
       @click="onSelect(category)"
@@ -23,7 +23,7 @@ import CategoryItem from "./CategoryItem.vue";
   }
 })
 export default class Categories extends Vue {
-  @Prop({}) categories!: Category[];
+  @Prop({}) eCategories!: Category[];
   @Prop({}) current!: string;
 
   @Emit("select")

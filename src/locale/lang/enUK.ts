@@ -1,6 +1,6 @@
 export default {
   search: 'Search ...',
-  categories: {
+  eCategories: {
     Activity: "Activity",
     Flags: "Flags",
     Foods: "Foods",

@@ -1,6 +1,6 @@
 export default {
   search: 'Поиск ...',
-  categories: {
+  eCategories: {
     Activity: "Активность",
     Flags: "Флаги",
     Foods: "Еда",

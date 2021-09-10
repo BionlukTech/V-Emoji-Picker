@@ -2,7 +2,7 @@
   <div id="EmojiPicker" :class="['emoji-picker', {dark}]">
     <Categories
       v-if="showCategories"
-      :categories="categoriesFiltered"
+      :e-categories="categoriesFiltered"
       :current="currentCategory"
       @select="changeCategory"
     />
